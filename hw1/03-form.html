@@ -4,15 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>03 - Form</title>
-    <!-- <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../hw2/03-form.css" /> -->
+    <title>Registration Form</title>
   </head>
   <body>
     <main>
       <form action="">
-        <h1>Contact Form</h1>
-        <!-- Add your code here -->
+        <h1>Registration Form</h1>
+        <div>
+          <label for="Username">Username:</label>
+          <input type="text" name="username" id="Username" >
+        </div>
+        <br>  
+        <div>
+          <label for="Email">Email:</label>
+          <input type="text" name="email" id="Email" >
+        </div>
+        <br>
+        <div>
+          <label for="Password" >Password:</label>
+          <input type="text" name="password" id="Password" >
+        </div>
+        <br>
+        <div>
+          <fieldset>
+            <legend>Would you like to sign up for the newsletter</legend>
+            <input type="radio" name="character" id="Yes" >
+            <label for="Yes">Yes, sign me up</label>
+            <input type="radio" name="character" id="No" >
+            <label for="No">No, thank you</label>
+          </fieldset>
+        </div>
+        <br>
+        <div>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" />
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
       </form>
     </main>
   </body>
