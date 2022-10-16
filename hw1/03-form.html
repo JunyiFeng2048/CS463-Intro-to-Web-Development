@@ -5,44 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Registration Form</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/03-form.css" />
   </head>
   <body>
     <main>
-      <form action="">
-        <h1>Registration Form</h1>
+      <form action="" class="form">
+        <h1 id="title">Registration Form</h1>
         <div>
-          <label for="Username">Username:</label>
-          <input type="text" name="username" id="Username" >
-        </div>
-        <br>  
-        <div>
-          <label for="Email">Email:</label>
-          <input type="text" name="email" id="Email" >
+          <div class="form-element1">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" >
+          </div>
+          <br>  
+          <div class="form-element1">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" >
+          </div>
+          <br>
+          <div class="form-element1">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" >
+          </div>
+          <br>
+          <div>
+            <div class="form-element1">Would you like to sign up for the newsletter?</div>
+            <input type="radio" name="character" id="yes">
+            <label for="yes" class="tab">Yes, sign me up</label>
+            <br>
+            <input type="radio" name="character" id="no" >
+            <label for="no">No, thank you</label>
+          </div>
+          <br>
+          <div class="form-element1">
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date" >
+          </div>
         </div>
         <br>
-        <div>
-          <label for="Password" >Password:</label>
-          <input type="text" name="password" id="Password" >
+        <div class="center"> 
+          <input class="btn-primary" type="submit" value="Submit">
+          <input class="btn-secondary" type="reset" value="Reset">
         </div>
-        <br>
-        <div>
-          <fieldset>
-            <legend>Would you like to sign up for the newsletter</legend>
-            <input type="radio" name="character" id="Yes" >
-            <label for="Yes">Yes, sign me up</label>
-            <input type="radio" name="character" id="No" >
-            <label for="No">No, thank you</label>
-          </fieldset>
-        </div>
-        <br>
-        <div>
-          <label for="date">Date:</label>
-          <input type="date" id="date" name="date" />
-        </div>
-        <br>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-
       </form>
     </main>
   </body>

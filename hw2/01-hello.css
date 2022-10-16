@@ -4,3 +4,26 @@ If you would prefer, you can delete them and use your own classes and style defi
 .container {
   width: 50vw;
 }
+
+body {
+  border: 1px, solid cornflowerblue;
+  position: absolute;
+  width: 50%; 
+  height: 50%; 
+  top: 5%; 
+  left: 25%;
+  text-align: center;
+}
+
+
+.image {
+  border-radius:  50%;
+}
+
+p {
+  text-align: left;
+}
+
+p::first-line { 
+  font-weight: bold;
+} 
