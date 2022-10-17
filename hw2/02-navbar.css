@@ -16,7 +16,7 @@ body {
 
 .list-item {
   background-color: var(--green);
-  width: 300px;
+  width: 180px;
   height: 100px;
   text-align: center;
   line-height:100px;
