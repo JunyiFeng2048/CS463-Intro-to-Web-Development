@@ -12,10 +12,61 @@
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="hw-styles.css" />
   </head>
-  <body>
-    <main>
-      <form>
-        <h1>Contact Form</h1>
+  <body style="background-color: black" >
+    <main >
+      <form class="bg-light border rounded mx-auto p-1 p-md-3 mt-5" >
+        <h1 class="mt-4"><strong>Contact Form</strong></h1>
+          
+        <div class="row mb-3 mt-4">
+          <label for="username" class="col-sm-3 col-form-label">Username: </label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="username">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="email" class="col-sm-3 col-form-label">Email: </label>
+          <div class="col-sm-9">
+            <input type="email" class="form-control" id="email">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="password" class="col-sm-3 col-form-label">Password: </label>
+          <div class="col-sm-9">
+            <input type="password" class="form-control" id="password">
+          </div>
+        </div>
+
+        <label for="newsletter">Would you like to sign up for the newsletter?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> Yes, sign me up
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> No, thank you
+          </label>
+        </div>
+
+        <br>
+
+        <div class="row mb-3">
+          <label for="date" class="col-sm-3 col-form-label">Date: </label>
+          <div class="col-sm-9">
+            <input type="date" name="date" id="date" class="form-control" >
+          </div>
+        </div>
+        <br>
+
+        <div class="form-group text-center">
+          <input type="submit" class="btn btn-primary w-25" value="Submit" />
+          <input type="reset" class="btn btn-secondary w-25" value="Reset" />
+        </div>
+        <br>
+
+        
       </form>
     </main>
   </body>
