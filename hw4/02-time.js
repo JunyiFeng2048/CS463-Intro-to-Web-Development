@@ -1,5 +1,48 @@
 const calculateTime = (date1, date2) => {
   // Given two dates, calculate and return the amount of time elapsed in years and months
+  var d1 = new Date(date1);
+  var d2 = new Date(date2);
+  if(d2 > d1)
+  {
+    var temp = d2;
+    d2 = d1;
+    d1 = temp;
+  }
+  if(isNaN(d1) || isNaN(d2))
+    return('Invalid input provided');
+  var year = d1.getFullYear() - d2.getFullYear();
+  var month = d1.getMonth() - d2.getMonth();
+  if(month < 0)
+   {
+     year -= 1;
+     month += 12;
+   }
+  if(year == 0)
+   {
+     if(month <= 1)
+      var result = 'Time elapsed: '+ month + ' month';
+    else
+      var result = 'Time elapsed: '+ month + ' months';
+   }
+  else
+  {
+    if(year == 1)
+    {
+      if(month <= 1)
+        var result =  'Time elapsed: '+ year + ' year, '+ month + ' month';
+      else
+        var result =  'Time elapsed: '+ year + ' year, ' + month + ' months';
+    }
+    else
+      {
+        if(month <= 1)
+          var result =  'Time elapsed: '+ year + ' years, '+ month + ' month';
+        else
+          var result =  'Time elapsed: '+ year + ' years, ' + month + ' months';
+      }
+  }
+  
+  return(result);
 };
 
 // Date() formats:
@@ -18,3 +61,4 @@ console.log(calculateTime(1635176171332, 1031814000000));
 // Time elapsed: 19 years, 1 month
 console.log(calculateTime(1635176171332, 'birthdate'));
 // Error: Invalid input provided.
+

@@ -5,12 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>03 - Form</title>
-    <script defer src="05-form.js"></script>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/03-form.css" />
+    <script defer src="03-form.js"></script>
   </head>
   <body>
     <main>
-      <form class="form" action="">
-        <h1 class="title">Registration Form</h1>
+      <form action="" class="form" id="form">
+        <h1 id="title">Registration Form</h1>
+        <div>
+          <div class="form-element1">
+            <label for="username">Username:</label>
+            <input type="text" name="Username" id="username" >
+          </div>
+          <br>  
+          <div class="form-element1">
+            <label for="email">Email:</label>
+            <input type="email" name="Email" id="email" >
+          </div>
+          <br>
+          <div class="form-element1">
+            <label for="password">Password:</label>
+            <input type="password" name="Password" id="password" >
+          </div>
+          <br>
+          <div>
+            <div class="form-element1">Would you like to sign up for the newsletter?</div>
+            <input type="radio" name="character" id="yes">
+            <label for="yes" class="tab">Yes, sign me up</label>
+            <br>
+            <input type="radio" name="character" id="no" >
+            <label for="no">No, thank you</label>
+          </div>
+          <br>
+          <div class="form-element1">
+            <label for="date">Date:</label>
+            <input type="date" name="Date" id="date" >
+          </div>
+        </div>
+        <br>
+        <div class="center"> 
+          <input onclick="myFunction()" class="btn-primary" type="submit" id="input" value="Submit" ></input>
+          <input class="btn-secondary" type="reset" value="Reset"></input>
+        </div>
       </form>
     </main>
   </body>
